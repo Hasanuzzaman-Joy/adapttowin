@@ -14,7 +14,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo">
-                <a href="index.html"><h2>Author Name</h2></a>
+                <a href="index.html"><h2>Evan Campbell</h2></a>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
@@ -34,9 +34,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Welcome to My Literary World</h1>
-            <p class="hero-subtitle">Discover stories that inspire, engage, and transform</p>
-            <a href="details.html" class="cta-button">Explore My Books</a>
+            <h1 class="hero-title">Adapt to Win</h1>
+            <p class="hero-subtitle">Mastering Strategy Implementation and Execution</p>
+            <a href="#book-section" class="cta-button">Pre-Order Now</a>
         </div>
         <div class="hero-decoration">
             <div class="decoration-circle"></div>
@@ -45,48 +45,210 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section">
+    <!-- Book Feature Section -->
+    <section id="book-section" class="book-feature-section">
         <div class="container">
-            <h2 class="section-title">About the Author</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Welcome to my literary universe! I am a passionate writer dedicated to crafting stories that resonate with readers across the globe. With years of experience in the literary world, I have published numerous works that span various genres and themes.</p>
-                    <p>My writing journey began with a simple love for storytelling, and it has evolved into a career dedicated to creating meaningful narratives that inspire, entertain, and provoke thought. Each book I write is a piece of my heart, carefully crafted to connect with readers on a deep, emotional level.</p>
-                    <a href="author.html" class="btn btn-primary">Learn More About Me</a>
+            <div class="book-feature-content">
+                <div class="book-image-container">
+                    <img src="images/book.png" alt="Adapt to Win Book Cover" class="book-cover-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="book-placeholder" style="display: none;">
+                        <span style="font-size: 8rem;">📘</span>
+                        <p>Book Cover</p>
+                    </div>
                 </div>
-                <div class="about-image">
-                    <div class="author-placeholder">
-                        <span style="font-size: 8rem;">✍️</span>
+                <div class="book-description-content">
+                    <h2 class="book-title-main">Adapt to Win</h2>
+                    <p class="book-subtitle">Transforming Strategy Implementation Through OKRs</p>
+                    
+                    <div class="book-description-text">
+                        <p>70% of corporate strategic initiatives fail and 70% of corporations fail to realize their strategic objectives. There are a range of root causes for this dismal performance, but most strategy realization failures are manifestations of ineffective strategy implementation processes.</p>
+                        
+                        <p>Weakness in critical strategy processes allows your strategic intent to succumb to the malign entropic force of strategy decay. <strong>Adapt to Win</strong> describes common shortcomings that undermine strategy realization and provides a framework and process framework to enable effective strategy deployment and execution using OKRs.</p>
+                        
+                        <p>It introduces portfolio management processes and techniques to ensure investments and capacity allocation decisions deliver strategic outcomes. It provides a complete model for aligning and optimizing business models and operating models to focus the entire organization on leaders' strategic intent.</p>
+                    </div>
+                    
+                    <div class="book-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎯</div>
+                            <div class="highlight-text">
+                                <h4>OKR Framework</h4>
+                                <p>Effective strategy deployment</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">📊</div>
+                            <div class="highlight-text">
+                                <h4>Portfolio Management</h4>
+                                <p>Strategic investment decisions</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">⚡</div>
+                            <div class="highlight-text">
+                                <h4>Business Alignment</h4>
+                                <p>Optimize operating models</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Books Preview -->
-    <section class="featured-section">
+    <!-- Pre-Order Section -->
+    <section class="preorder-section">
         <div class="container">
-            <h2 class="section-title">Featured Works</h2>
-            <p class="section-subtitle">A glimpse into my published collection</p>
-            <div class="featured-grid">
-                <div class="featured-card">
-                    <div class="featured-cover">📖</div>
-                    <h3>The Journey Within</h3>
-                    <p>A captivating tale of self-discovery</p>
-                    <a href="details.html" class="btn btn-secondary">View All Books</a>
+            <h2 class="section-title">Pre-Order Your Copy</h2>
+            <p class="section-subtitle">Available at leading bookstores and online retailers</p>
+            
+            <div class="preorder-grid">
+                <div class="preorder-card">
+                    <div class="preorder-platform">
+                        <h3>Amazon</h3>
+                        <a href="#" class="preorder-link" target="_blank">Order on Amazon</a>
+                    </div>
+                    <div class="barcode-wrapper">
+                        <img src="images/barcode.png" alt="Amazon Barcode" class="platform-barcode" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="barcode-placeholder" style="display: none;">
+                            <div class="barcode-pattern">| || ||| || ||| || ||| || ||| || ||| |</div>
+                            <p class="barcode-label">Scan to order</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="featured-card">
-                    <div class="featured-cover">🚀</div>
-                    <h3>Echoes of Tomorrow</h3>
-                    <p>Exploring the boundaries of time</p>
-                    <a href="details.html" class="btn btn-secondary">View All Books</a>
+                
+                <div class="preorder-card">
+                    <div class="preorder-platform">
+                        <h3>Barnes & Noble</h3>
+                        <a href="#" class="preorder-link" target="_blank">Order on B&N</a>
+                    </div>
+                    <div class="barcode-wrapper">
+                        <img src="images/barcode.png" alt="Barnes & Noble Barcode" class="platform-barcode" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="barcode-placeholder" style="display: none;">
+                            <div class="barcode-pattern">| || ||| || ||| || ||| || ||| || ||| |</div>
+                            <p class="barcode-label">Scan to order</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="featured-card">
-                    <div class="featured-cover">⚔️</div>
-                    <h3>The Last Stand</h3>
-                    <p>An epic fantasy adventure</p>
-                    <a href="details.html" class="btn btn-secondary">View All Books</a>
+                
+                <div class="preorder-card">
+                    <div class="preorder-platform">
+                        <h3>Books-a-Million</h3>
+                        <a href="#" class="preorder-link" target="_blank">Order on BAM</a>
+                    </div>
+                    <div class="barcode-wrapper">
+                        <img src="images/barcode.png" alt="Books-a-Million Barcode" class="platform-barcode" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="barcode-placeholder" style="display: none;">
+                            <div class="barcode-pattern">| || ||| || ||| || ||| || ||| || ||| |</div>
+                            <p class="barcode-label">Scan to order</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="preorder-card">
+                    <div class="preorder-platform">
+                        <h3>Bookshop.org</h3>
+                        <a href="#" class="preorder-link" target="_blank">Order on Bookshop</a>
+                    </div>
+                    <div class="barcode-wrapper">
+                        <img src="images/barcode.png" alt="Bookshop.org Barcode" class="platform-barcode" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="barcode-placeholder" style="display: none;">
+                            <div class="barcode-pattern">| || ||| || ||| || ||| || ||| || ||| |</div>
+                            <p class="barcode-label">Scan to order</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="preorder-card">
+                    <div class="preorder-platform">
+                        <h3>Porchlight Books</h3>
+                        <a href="#" class="preorder-link" target="_blank">Order on Porchlight</a>
+                    </div>
+                    <div class="barcode-wrapper">
+                        <img src="images/barcode.png" alt="Porchlight Books Barcode" class="platform-barcode" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="barcode-placeholder" style="display: none;">
+                            <div class="barcode-pattern">| || ||| || ||| || ||| || ||| || ||| |</div>
+                            <p class="barcode-label">Scan to order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Insights Section -->
+    <section class="insights-section">
+        <div class="container">
+            <h2 class="section-title">Key Insights</h2>
+            <p class="section-subtitle">Discover what makes this book essential for strategic leaders</p>
+            
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-number">01</div>
+                    <h3>Strategy Decay Prevention</h3>
+                    <p>Learn how to prevent your strategic intent from succumbing to the entropic forces that cause strategy decay and implementation failure.</p>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-number">02</div>
+                    <h3>OKR Implementation</h3>
+                    <p>Master the framework and processes needed to enable effective strategy deployment and execution using Objectives and Key Results.</p>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-number">03</div>
+                    <h3>Portfolio Optimization</h3>
+                    <p>Ensure your investments and capacity allocation decisions deliver strategic outcomes through proven portfolio management techniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why This Book Section -->
+    <section class="why-book-section">
+        <div class="container">
+            <div class="why-book-content">
+                <div class="why-book-text">
+                    <h2 class="section-title">Why This Book Matters</h2>
+                    <p class="why-book-intro">In today's rapidly changing business environment, the ability to execute strategy effectively is what separates successful organizations from those that struggle.</p>
+                    
+                    <div class="why-book-points">
+                        <div class="why-point">
+                            <div class="why-icon">📈</div>
+                            <div class="why-text">
+                                <h4>Proven Framework</h4>
+                                <p>Based on real-world experience and tested methodologies that have transformed organizations across industries.</p>
+                            </div>
+                        </div>
+                        <div class="why-point">
+                            <div class="why-icon">🎯</div>
+                            <div class="why-text">
+                                <h4>Actionable Insights</h4>
+                                <p>Not just theory—practical tools and processes you can implement immediately to improve strategy execution.</p>
+                            </div>
+                        </div>
+                        <div class="why-point">
+                            <div class="why-icon">💡</div>
+                            <div class="why-text">
+                                <h4>Comprehensive Approach</h4>
+                                <p>Covers everything from OKR implementation to portfolio management and organizational alignment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="details.html" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="why-book-visual">
+                    <div class="stat-box">
+                        <div class="stat-large">70%</div>
+                        <div class="stat-description">Strategic initiatives fail due to poor implementation</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-large">50%</div>
+                        <div class="stat-description">Corporations fail to realize strategic objectives</div>
+                    </div>
+                    <div class="stat-box highlight">
+                        <div class="stat-large">100%</div>
+                        <div class="stat-description">Organizations can improve with the right framework</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,7 +286,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Author Name. All rights reserved.</p>
+            <p>&copy; 2024 Evan Campbell. All rights reserved.</p>
         </div>
     </footer>
 

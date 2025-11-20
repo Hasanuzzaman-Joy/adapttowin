@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources - Author Portfolio</title>
+    <title>Resources - Adopt to Win</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -12,23 +13,21 @@
 <body>
     <div id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">Adapt to Win</div>
-            <div class="preloader-book">
-                <div class="book">
-                    <div class="book-cover"></div>
-                    <div class="book-page page-1"></div>
-                    <div class="book-page page-2"></div>
-                    <div class="book-page page-3"></div>
+            <div class="preloader-badge">
+                <div class="badge-ring"></div>
+                <div class="badge-core">
+                    <div class="badge-icon"></div>
                 </div>
             </div>
-            <div class="preloader-text">Preparing pages…</div>
+            <div class="preloader-logo">Adapt to Win</div>
+            <div class="preloader-sub">Preparing experience…</div>
         </div>
     </div>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo">
-                <a href="index.html"><h2>Author Name</h2></a>
+                <a href="index.html"><h2>Evan Campbell</h2></a>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -47,7 +46,7 @@
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h1 class="page-title">Adapt to Win Resource Hub</h1>
             <p class="page-subtitle">Frameworks, canvases, and reading stacks curated for modern strategy teams.</p>
         </div>
@@ -55,7 +54,7 @@
 
     <!-- Diagram Section -->
     <section class="visual-diagram" id="diagram">
-        <div class="container diagram-trio">
+        <div class="container diagram-trio" data-aos="fade-up">
             <div class="diagram-column">
                 <p class="eyebrow">Adapt to Win Toolkit</p>
                 <h2>Various tools, canvases and other resources referenced in Adapt to Win are:</h2>
@@ -83,7 +82,7 @@
         </div>
     </section>
 
-    <!-- Momentum Lab (Extra Section) -->
+    <!-- Momentum Lab -->
     <section class="momentum-lab">
         <div class="container">
             <div class="section-heading">
@@ -91,7 +90,7 @@
                 <h2>From canvas to cadence.</h2>
                 <p>Use this 4-step ritual to keep Adapt to Win workstreams alive between workshops.</p>
             </div>
-            <div class="lab-grid">
+            <div class="lab-grid" data-aos="fade-up">
                 <article class="lab-card">
                     <span class="lab-step">01</span>
                     <h3>Surface Signals</h3>
@@ -124,6 +123,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
 

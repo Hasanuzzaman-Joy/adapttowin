@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Author Portfolio</title>
+    <title>Home - Adopt to Win</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -12,16 +13,14 @@
 <body>
     <div id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">Adapt to Win</div>
-            <div class="preloader-book">
-                <div class="book">
-                    <div class="book-cover"></div>
-                    <div class="book-page page-1"></div>
-                    <div class="book-page page-2"></div>
-                    <div class="book-page page-3"></div>
+            <div class="preloader-badge">
+                <div class="badge-ring"></div>
+                <div class="badge-core">
+                    <div class="badge-icon"></div>
                 </div>
             </div>
-            <div class="preloader-text">Preparing pages…</div>
+            <div class="preloader-logo">Adapt to Win</div>
+            <div class="preloader-sub">Preparing experience…</div>
         </div>
     </div>
     <!-- Navigation -->
@@ -47,7 +46,7 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
+        <div class="hero-content" data-aos="fade-up">
             <h1 class="hero-title">Adapt to Win</h1>
             <p class="hero-subtitle">Mastering Strategy Implementation and Execution</p>
             <a href="#book-section" class="cta-button">Pre-Order Now</a>
@@ -63,14 +62,14 @@
     <section id="book-section" class="book-feature-section">
         <div class="container">
             <div class="book-feature-content">
-                <div class="book-image-container">
+                <div class="book-image-container" data-aos="fade-up">
                     <img src="images/book.png" alt="Adapt to Win Book Cover" class="book-cover-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="book-placeholder" style="display: none;">
                         <span style="font-size: 8rem;">📘</span>
                         <p>Book Cover</p>
                     </div>
                 </div>
-                <div class="book-description-content">
+                <div class="book-description-content" data-aos="fade-up">
                     <h2 class="book-title-main">Adapt to Win</h2>
                     <p class="book-subtitle">Transforming Strategy Implementation Through OKRs</p>
                     
@@ -82,7 +81,7 @@
                         <p>It introduces portfolio management processes and techniques to ensure investments and capacity allocation decisions deliver strategic outcomes. It provides a complete model for aligning and optimizing business models and operating models to focus the entire organization on leaders' strategic intent.</p>
                     </div>
                     
-                    <div class="book-highlights">
+                    <div class="book-highlights" data-aos="fade-up">
                         <div class="highlight-item">
                             <div class="highlight-icon">🎯</div>
                             <div class="highlight-text">
@@ -116,7 +115,7 @@
             <h2 class="section-title">Pre-Order Your Copy</h2>
             <p class="section-subtitle">Available at leading bookstores and online retailers</p>
             
-            <div class="preorder-grid">
+            <div class="preorder-grid" data-aos="fade-up">
                 <div class="preorder-card">
                     <div class="preorder-platform">
                         <h3>Amazon</h3>
@@ -199,19 +198,19 @@
                 <p>Real-world workstreams powered by the TOC, resources, and services across this site.</p>
             </div>
             <div class="outcomes-grid">
-                <article class="outcome-card">
+                <article class="outcome-card" data-aos="fade-up" data-aos-delay="0">
                     <div class="outcome-icon">🧭</div>
                     <h3>Strategy Realization System</h3>
                     <p>Activate the five-part framework from the Details page to keep intent, OKRs, portfolio choices, and organizational fitness aligned.</p>
                     <a href="details.html" class="outcome-link">See table of contents →</a>
                 </article>
-                <article class="outcome-card">
+                <article class="outcome-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="outcome-icon">🎯</div>
                     <h3>Living OKR Rituals</h3>
                     <p>Use the resources hub to pair canvases, empathy work, and the diagram with a weekly Momentum Lab cadence.</p>
                     <a href="resources.html" class="outcome-link">Explore resources →</a>
                 </article>
-                <article class="outcome-card">
+                <article class="outcome-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="outcome-icon">🤝</div>
                     <h3>Advisory & Workshops</h3>
                     <p>Blend book insights with speaking and consulting offers to accelerate portfolio governance or operating-model change.</p>
@@ -224,7 +223,7 @@
     <!-- Experience Section -->
     <section class="experience-section">
         <div class="container experience-grid">
-            <div class="experience-text">
+            <div class="experience-text" data-aos="fade-up">
                 <p class="eyebrow">From page to practice</p>
                 <h2>Modern support for every stakeholder.</h2>
                 <p>Readers, operators, and executives move seamlessly across the site: deep dives on Details & Excerpts, downloadable canvases inside Resources, and tailored engagements in Services.</p>
@@ -234,15 +233,15 @@
                 </div>
             </div>
             <div class="experience-cards">
-                <article class="experience-card">
+                <article class="experience-card" data-aos="fade-up" data-aos-delay="0">
                     <h3>Compass Briefings</h3>
                     <p>Monthly virtual sessions that highlight a chapter, a canvas, and a portfolio practice. Subscribers get early access to new excerpts.</p>
                 </article>
-                <article class="experience-card">
+                <article class="experience-card" data-aos="fade-up" data-aos-delay="100">
                     <h3>Workshop Companion</h3>
                     <p>Facilitation kit combining the Momentum Lab ritual, diagram printouts, and OKR checkpoints for on-site leadership meetings.</p>
                 </article>
-                <article class="experience-card">
+                <article class="experience-card" data-aos="fade-up" data-aos-delay="200">
                     <h3>Strategic Office Hours</h3>
                     <p>Book 1:1 or team office hours directly through the Services page to unblock portfolio, funding, or capability decisions.</p>
                 </article>
@@ -258,5 +257,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

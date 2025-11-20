@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evan Campbell - The Author Contact & Engage</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -12,16 +13,14 @@
 <body>
     <div id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">Adapt to Win</div>
-            <div class="preloader-book">
-                <div class="book">
-                    <div class="book-cover"></div>
-                    <div class="book-page page-1"></div>
-                    <div class="book-page page-2"></div>
-                    <div class="book-page page-3"></div>
+            <div class="preloader-badge">
+                <div class="badge-ring"></div>
+                <div class="badge-core">
+                    <div class="badge-icon"></div>
                 </div>
             </div>
-            <div class="preloader-text">Preparing pages…</div>
+            <div class="preloader-logo">Adapt to Win</div>
+            <div class="preloader-sub">Preparing experience…</div>
         </div>
     </div>
     <!-- Navigation -->
@@ -47,7 +46,7 @@
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h1 class="page-title">Evan Campbell</h1>
             <p class="page-subtitle">Senior Technology & Business Executive | Management Consultant | Author</p>
         </div>
@@ -55,7 +54,7 @@
 
     <!-- Section 1: About & Profile -->
     <section class="author-profile-section">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="profile-content">
                 <div class="profile-image-wrapper">
                     <div class="profile-image-container">
@@ -100,7 +99,7 @@
             <h2 class="section-title">Contact & Engage</h2>
             <p class="section-subtitle">Evan is open to accepting select speaking, keynote, and consulting engagements</p>
             
-            <div class="contact-engage-content">
+            <div class="contact-engage-content" data-aos="fade-up">
                 <div class="contact-methods">
                     <div class="contact-method-card">
                         <div class="method-icon">📧</div>
@@ -165,5 +164,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

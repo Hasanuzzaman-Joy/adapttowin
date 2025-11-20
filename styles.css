@@ -472,6 +472,392 @@ section {
     color: var(--primary-color);
 }
 
+/* Resources Revamp */
+.resource-hero {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.12), rgba(118, 75, 162, 0.12));
+    padding: 100px 0;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-copy h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero-copy p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-secondary.ghost {
+    border-color: rgba(44, 62, 80, 0.25);
+    background: white;
+}
+
+.hero-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.hero-metrics div {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+
+.hero-metrics span {
+    display: block;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+.hero-panel {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.panel-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(44, 62, 80, 0.05);
+}
+
+.panel-card .panel-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.panel-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.panel-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.panel-card li {
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-light);
+}
+
+.panel-card li::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    left: 0;
+    top: 0.65rem;
+}
+
+.canvas-showcase {
+    background: white;
+    padding: 100px 0;
+}
+
+.section-heading {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.section-heading h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.section-heading p {
+    color: var(--text-light);
+}
+
+.canvas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.canvas-card {
+    background: var(--bg-light);
+    border-radius: 18px;
+    padding: 2rem;
+    border: 1px solid rgba(44, 62, 80, 0.05);
+    transition: all 0.3s ease;
+}
+
+.canvas-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    background: white;
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.canvas-icon {
+    font-size: 2rem;
+}
+
+.canvas-card h3 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.canvas-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.canvas-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.visual-diagram {
+    background: linear-gradient(135deg, #eff2ff 0%, #ffffff 100%);
+    padding: 100px 0;
+}
+
+.diagram-trio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.diagram-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.diagram-column h2 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: var(--primary-color);
+}
+
+.diagram-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.diagram-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.diagram-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+}
+
+.diagram-image {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 24px;
+    box-shadow: 0 25px 60px rgba(17, 24, 38, 0.15);
+}
+
+.diagram-image img {
+    width: 100%;
+    display: block;
+    border-radius: 18px;
+}
+
+@media (max-width: 768px) {
+    .diagram-trio {
+        gap: 1.8rem;
+    }
+
+    .diagram-column h2 {
+        font-size: 1.2rem;
+    }
+}
+
+.reading-list {
+    background: white;
+    padding: 100px 0;
+}
+
+.reading-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.reading-card {
+    display: flex;
+    gap: 1.2rem;
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(44, 62, 80, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reading-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    background: white;
+}
+
+.book-icon {
+    font-size: 2rem;
+}
+
+.reading-card h3 {
+    margin-bottom: 0.3rem;
+}
+
+.reading-card .author {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.6rem;
+}
+
+.reading-card p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+.momentum-lab {
+    background: linear-gradient(135deg, #2c3e50, #111826);
+    color: white;
+    padding: 100px 0;
+}
+
+.momentum-lab .section-heading {
+    text-align: center;
+}
+
+.momentum-lab .section-heading p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.momentum-lab .section-heading h2 {
+    color: white;
+}
+
+.lab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.lab-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 2rem;
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.lab-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.lab-step {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #f093fb;
+}
+
+.lab-card h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.lab-card p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.visual-text .btn {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero-metrics {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .panel-card {
+        padding: 2rem;
+    }
+
+    .canvas-grid,
+    .reading-grid,
+    .lab-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Services Section */
 .services-section {
     background: var(--bg-light);
@@ -2193,6 +2579,385 @@ section {
 
     .contact-engage-form {
         padding: 2rem;
+    }
+}
+
+/* Services Page Styles */
+.consulting-services-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.consulting-intro {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+    margin-bottom: 5rem;
+    align-items: start;
+}
+
+.consulting-image-wrapper {
+    position: sticky;
+    top: 120px;
+}
+
+.consulting-image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    border: 5px solid white;
+}
+
+.consulting-placeholder {
+    width: 100%;
+    aspect-ratio: 1;
+    background: var(--gradient-1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.consulting-intro-content {
+    padding-top: 1rem;
+}
+
+.section-title-left {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.consulting-description {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.consulting-company {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e8e9ea;
+}
+
+.consulting-company strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.company-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.company-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.consulting-services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.consulting-service-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.consulting-service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.12);
+}
+
+.service-card-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.service-card-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.service-card-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+}
+
+.service-card-body {
+    padding: 2.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card-body > p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.service-capabilities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: auto;
+}
+
+.service-capabilities li {
+    padding: 0.75rem 0;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 2rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.service-capabilities li:last-child {
+    border-bottom: none;
+}
+
+.service-capabilities li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Partnership Section */
+.partnership-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.partnership-section .section-title {
+    color: white;
+}
+
+.partnership-section .section-title::after {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.partnership-section .section-subtitle {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.2rem;
+}
+
+.partnership-content {
+    margin-top: 4rem;
+}
+
+.partnership-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 3.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.partnership-logo {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.partnership-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.partnership-logo h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.partnership-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0.95;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+}
+
+.partnership-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.partnership-description {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.partnership-description p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.partnership-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.partnership-service-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: start;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+.partnership-service-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.partnership-service-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.partnership-service-content h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.partnership-service-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.partnership-cta {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.partnership-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.partnership-cta .cta-button {
+    display: inline-block;
+    padding: 16px 40px;
+    background: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.partnership-cta .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design for Services Page */
+@media (max-width: 968px) {
+    .consulting-intro {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .consulting-image-wrapper {
+        position: static;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .consulting-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .partnership-services {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .consulting-services-section,
+    .partnership-section {
+        padding: 60px 0;
+    }
+
+    .section-title-left {
+        font-size: 2.2rem;
+    }
+
+    .service-card-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .partnership-card {
+        padding: 2rem;
+    }
+
+    .partnership-logo h3 {
+        font-size: 2rem;
     }
 }
 

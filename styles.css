@@ -1190,6 +1190,222 @@ section {
     opacity: 0.95;
 }
 
+/* Details Hero */
+.details-hero {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.12), rgba(118, 75, 162, 0.12));
+    padding: 100px 0;
+}
+
+.details-hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-text h2 {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.hero-text h2 span {
+    display: block;
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+}
+
+.hero-text p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.hero-tags span {
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    border: 1px solid rgba(44, 62, 80, 0.15);
+    background: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-visual img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 24px;
+    box-shadow: 0 30px 70px rgba(17, 24, 38, 0.25);
+    border: 6px solid white;
+}
+
+.hero-orbit {
+    position: absolute;
+    inset: -30px;
+    border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.4);
+    animation: rotateOrbit 15s linear infinite;
+    pointer-events: none;
+}
+
+.orbit-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.orbit-dot:nth-child(1) { top: 10%; left: 50%; }
+.orbit-dot:nth-child(2) { bottom: 15%; right: 20%; }
+.orbit-dot:nth-child(3) { top: 45%; left: 5%; }
+
+@keyframes rotateOrbit {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.toc-section {
+    background: linear-gradient(135deg, #0b1523, #172435, #213449);
+    padding: 110px 0;
+    color: white;
+}
+
+.toc-section .section-heading {
+    text-align: center;
+}
+
+.toc-section .section-heading h2,
+.toc-section .section-heading p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.toc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.toc-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 22px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.toc-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+}
+
+.part-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(240, 200, 255, 0.9);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.toc-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.chapter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.chapter-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+}
+
+.chapter-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(240, 200, 255, 0.95);
+    box-shadow: 0 0 8px rgba(240, 200, 255, 0.6);
+}
+
+@media (max-width: 900px) {
+    .toc-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.excerpt-highlight {
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    padding: 90px 0;
+    color: white;
+}
+
+.excerpt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.excerpt-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.excerpt-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.excerpt-card h3 {
+    color: white;
+    margin-bottom: 0.8rem;
+}
+
+.excerpt-card p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.excerpt-card .eyebrow {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 /* About Section */
 .about-section {
     padding: 80px 0;
